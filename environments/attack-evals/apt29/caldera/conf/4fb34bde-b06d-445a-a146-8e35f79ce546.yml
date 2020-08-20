@@ -1,0 +1,32 @@
+facts:
+  - trait: target.domain.name
+    value: dmevals.local
+  - trait: target.winrm.username
+    value: mscott
+  - trait: target.winrm.password
+    value: abc123!D@t3M1k3
+  - trait: target.winrm.remote_host
+    value: NEWYORK
+  - trait: pivot_machine_hostname
+    value: NASHUA
+  - trait: 7zip_password
+    value: lolol
+  - trait: profile_user
+    value: pbeesly
+  - trait: profile_user_password
+    value: Fl0nk3rt0n!T0by
+  - trait: profile_user_day2
+    value: dschrute
+  - trait: profile_user_password_day2
+    value: Schrut3F@rms!B33ts
+  - trait: onedrive.username
+    value: ONEDRIVE_USERNAME@outlook.com
+  - trait: onedrive.url
+    value: ONEDRIVE_URL
+  - trait: onedrive.password
+    value: ONEDRIVE_PASSWORD
+  
+id: 4fb34bde-b06d-445a-a146-8e35f79ce546
+name: evals-round-2
+rules: []
+  
