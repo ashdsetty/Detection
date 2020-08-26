@@ -112,6 +112,7 @@ After granting consent to the application, the victim will be redirected to a we
 * https://www.varonis.com/blog/using-malicious-azure-apps-to-infiltrate-a-microsoft-365-tenant/
 * https://www.exfiltrated.com/research/HackingTheClouds.pdf
 * https://danielgrzelak.com/backdooring-an-aws-account-da007d36f8f9
+* https://cyberx.tech/hacking-lab/
 
 # Office 365 Hacking
 
