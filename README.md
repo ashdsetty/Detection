@@ -95,6 +95,9 @@ After granting consent to the application, the victim will be redirected to a we
   - Microsoft also provides insights about the victim’s peers using the API. The peer data could be used to pinpoint other users that the victim had the most interaction with
   - modify the user’s files with the right permissions. (potential: One option is to turn the malicious Azure app into ransomware that remotely encrypts files that the user has access to on SharePoint and OneDrive)
 
+5. [AWS Lambda](https://danielgrzelak.com/backdooring-an-aws-account-da007d36f8f9)
+
+
 ### Resources
 
 * https://thehackernews.com/2020/01/microsoft-azure-vulnerabilities.html
