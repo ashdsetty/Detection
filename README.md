@@ -99,6 +99,16 @@ After granting consent to the application, the victim will be redirected to a we
 
 6. [Azure Persistance](https://blog.netspi.com/maintaining-azure-persistence-via-automation-accounts/)
 
+  - Create a new Automation Account
+  - Import a new runbook that creates an AzureAD user with Owner permissions for the subscription*
+  - Sample runbook for this Blog located here – https://github.com/NetSPI/MicroBurst
+  - Add the AzureAD module to the Automation account
+  - Update the Azure Automation Modules
+  - Assign “User Administrator” and “Subscription Owner” rights to the automation account
+  - Add a webhook to the runbook
+  - Eventually lose your access…
+  - Trigger the webhook with a post request to create the new user
+
 
 ### Resources
 
