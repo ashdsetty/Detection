@@ -97,9 +97,9 @@ After granting consent to the application, the victim will be redirected to a we
 
 5. [AWS Lambda](https://danielgrzelak.com/backdooring-an-aws-account-da007d36f8f9)
 
-6. [Azure Persistance](https://blog.netspi.com/maintaining-azure-persistence-via-automation-accounts/)
+6. [Azure Persistance](https://blog.netspi.com/maintaining-azure-persistence-via-automation-accounts/) - Adds an Automation Account with excessive privileges that can be used to add new accounts (with Subscription Owner permissions) to AzureAD via a single POST request.
 
-Process
+  Process
   - Create a new Automation Account
   - Import a new runbook that creates an AzureAD user with Owner permissions for the subscription*
   - Sample runbook for this Blog located here – https://github.com/NetSPI/MicroBurst
