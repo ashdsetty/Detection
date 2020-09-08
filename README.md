@@ -97,6 +97,8 @@ After granting consent to the application, the victim will be redirected to a we
 
 5. [AWS Lambda](https://danielgrzelak.com/backdooring-an-aws-account-da007d36f8f9)
 
+6. [Azure Persistance](https://blog.netspi.com/maintaining-azure-persistence-via-automation-accounts/)
+
 
 ### Resources
 
@@ -116,6 +118,7 @@ After granting consent to the application, the victim will be redirected to a we
 * https://www.exfiltrated.com/research/HackingTheClouds.pdf
 * https://danielgrzelak.com/backdooring-an-aws-account-da007d36f8f9
 * https://cyberx.tech/hacking-lab/
+* https://blog.netspi.com/maintaining-azure-persistence-via-automation-accounts/
 
 # Office 365 Hacking
 
