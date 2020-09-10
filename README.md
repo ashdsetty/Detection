@@ -70,7 +70,9 @@ Commands:
 Target a group of Office 365 accounts and use a generalized password list (created through python script). 
 
 Scripts: 
+
 https://github.com/mysoc/detection-sandbox/blob/master/pspray.ps1
+
 https://github.com/mysoc/detection-sandbox/blob/master/O365-spray.ps1
 
 #### User Enumeration
