@@ -75,6 +75,8 @@ https://github.com/mysoc/detection-sandbox/blob/master/O365-spray.ps1
 
 #### User Enumeration
 
+Invoke-AADIntUserEnumerationAsOutsider -UserName "user@company.com
+
 #### 
 
 #### Phishing - Azure App
