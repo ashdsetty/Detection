@@ -58,6 +58,8 @@ Commands:
 - Install-Module AADInternals
 - Import-Module AADInternals
 - Invoke-AADIntReconAsOutsider -DomainName company.com | Format-Table
+- Invoke-AADIntUserEnumerationAsOutsider -UserName "user@company.com
+
 
 ### Intrusion - Execution
 
