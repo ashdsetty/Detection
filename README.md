@@ -51,6 +51,14 @@ An attacker who successfully exploited this vulnerability could allow an unprivi
 
 ### Recon (Outsider) - https://o365blog.com/aadkillchain/
 
+Azure AD Recon (AADInternals) : https://o365blog.com/aadinternals/
+
+Commands: 
+
+- Install-Module AADInternals
+- Import-Module AADInternals
+- Invoke-AADIntReconAsOutsider -DomainName company.com | Format-Table
+
 ### Intrusion - Execution
 
 #### Password Spraying
