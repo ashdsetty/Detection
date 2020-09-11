@@ -81,7 +81,15 @@ Invoke-AADIntUserEnumerationAsOutsider -UserName "user@company.com"
 
 You can use a text file of users (userlist) : Get-Content .\users.txt | Invoke-AADIntUserEnumerationAsOutsider
 
-#### 
+### [Recon (Guest)](https://o365blog.com/post/quest_for_guest/)
+
+```
+# Prompt for credentials and save the token to cache
+Get-AADIntAccessTokenForAzureCoreManagement -SaveToCache
+
+# List the user's tenants
+Get-AADIntAzureTenants
+```
 
 #### Phishing - Azure App
 
