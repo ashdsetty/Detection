@@ -53,6 +53,8 @@ An attacker who successfully exploited this vulnerability could allow an unprivi
 
 Azure AD Recon (AADInternals) : https://o365blog.com/aadinternals/
 
+Install this powershell module to perform recon.
+
 Commands: 
 ```
 Install-Module AADInternals
