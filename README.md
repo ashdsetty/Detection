@@ -59,6 +59,12 @@ Install-Module AADInternals
 Import-Module AADInternals
 Invoke-AADIntReconAsOutsider -DomainName company.com | Format-Table
 Invoke-AADIntUserEnumerationAsOutsider -UserName "user@company.com
+
+# Get login information for a domain
+Get-AADIntLoginInformation -Domain company.com
+
+# Get tenant details
+Get-AADIntTenantDetails
 ```
 
 ### Intrusion - Execution
@@ -87,8 +93,12 @@ Get-Content .\users.txt | Invoke-AADIntUserEnumerationAsOutsider
 ```
 
 ### [Recon (Guest)](https://o365blog.com/post/quest_for_guest/)
+Use guest account from password spraying
 
 ```
+# Prompt for credentials and retrieve & store access token to cache
+Get-AADIntAccessTokenForAADGraph -SaveToCache
+
 # Prompt for credentials and save the token to cache
 Get-AADIntAccessTokenForAzureCoreManagement -SaveToCache
 
