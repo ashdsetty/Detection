@@ -49,9 +49,9 @@ If exploited, the issue would have enabled a remote hacker to unauthorizedly acc
 
 An attacker who successfully exploited this vulnerability could allow an unprivileged function run by the user to execute code in the context of NT AUTHORITY\system thereby escaping the Sandbox.
 
-### Recon (Outsider) - https://o365blog.com/aadkillchain/
+### [Recon (Outsider)](https://o365blog.com/aadkillchain/)
 
-Azure AD Recon (AADInternals) : https://o365blog.com/aadinternals/
+[Azure AD Recon (AADInternals)](https://o365blog.com/aadinternals/)
 
 Install this powershell module to perform recon.
 
