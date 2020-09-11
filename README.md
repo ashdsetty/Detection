@@ -79,7 +79,9 @@ https://github.com/mysoc/detection-sandbox/blob/master/O365-spray.ps1
 ```
 Invoke-AADIntUserEnumerationAsOutsider -UserName "user@company.com"
 ```
-You can use a text file of users (userlist) : ```Get-Content .\users.txt | Invoke-AADIntUserEnumerationAsOutsider
+You can use a text file of users (userlist) : 
+```
+Get-Content .\users.txt | Invoke-AADIntUserEnumerationAsOutsider
 ```
 
 ### [Recon (Guest)](https://o365blog.com/post/quest_for_guest/)
