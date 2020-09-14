@@ -97,6 +97,10 @@ Get-Content .\users.txt | Invoke-AADIntUserEnumerationAsOutsider
 ### [Recon (Guest)](https://o365blog.com/post/quest_for_guest/)
 Use guest account from password spraying
 
+Stage 1: If we know the user id or upn of any user of the tenant, we can list all the groups (including teams and roles) the user is member of. As a result, we now know the ids of those groups, and we can retrieve the list of members of those groups.
+
+Stage 2: Now we can retrieve the same information (groups and their members) for each user found at stage 1!
+
 ```
 # Prompt for credentials and retrieve & store access token to cache
 Get-AADIntAccessTokenForAADGraph -SaveToCache
