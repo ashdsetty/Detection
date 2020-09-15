@@ -112,7 +112,15 @@ Get-AADIntAccessTokenForAzureCoreManagement -SaveToCache
 Get-AADIntAzureTenants
 ```
 
-#### Phishing - Azure App
+#### Phishing - Azure App 
+
+##### Resources
+
+https://github.com/mdsecactivebreach/o365-attack-toolkit
+
+https://www.mdsec.co.uk/2019/07/introducing-the-office-365-attack-toolkit/
+
+https://www.youtube.com/watch?v=JZjrvpacfDY
 
 1. Background - requires victim to own a web application hosted by an Azure tenant. 
 
