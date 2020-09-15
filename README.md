@@ -113,10 +113,24 @@ Stage 1: If we know the user id or upn of any user of the tenant, we can list al
 ```
 # Invoke the user enumeration
 $results = Invoke-AADIntUserEnumerationAsGuest -GroupMembers -Manager -Subordinates -Roles
+# List group information
+$results.Groups | Select-Object displayName,id,membershiprule,description
+$results.Groups | Select-Object displayName,id,members
 ```
+Now we have the list of all external users of the tenant
+
 Stage 2: Now we can retrieve the same information (groups and their members) for each user found at stage 1!
+```
+# Invoke the user enumeration for the known user including group members
+$results = Invoke-AADIntUserEnumerationAsGuest -UserName "user@company.com" -GroupMembers -Manager -Subordinates -Roles
+# List group information
+$results.Groups | Select-Object displayName,id,membershiprule,description
 
+# Listing the group information reveals another typical configuration. There is a dynamic group for all organisation members: this allows guest users to access all users of the tenant
 
+# List role information
+$results.Roles | Select-Object id,members
+```
 #### Phishing - Azure App 
 
 ##### Resources
