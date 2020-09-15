@@ -126,7 +126,8 @@ $results = Invoke-AADIntUserEnumerationAsGuest -UserName "user@company.com" -Gro
 # List group information
 $results.Groups | Select-Object displayName,id,membershiprule,description
 
-# Listing the group information reveals another typical configuration. There is a dynamic group for all organisation members: this allows guest users to access all users of the tenant
+# Listing the group information reveals another typical configuration. 
+There is a dynamic group for all organisation members: this allows guest users to access all users of the tenant
 
 # List role information
 $results.Roles | Select-Object id,members
