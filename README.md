@@ -233,3 +233,10 @@ After granting consent to the application, the victim will be redirected to a we
 * https://www.fireeye.com/blog/threat-research/2020/07/insights-into-office-365-attacks-and-how-managed-defense-investigates.html
 * https://www.darkreading.com/cloud/how-attackers-could-use-azure-apps-to-sneak-into-microsoft-365/d/d-id/1337399
 * https://o365blog.com/aadkillchain/
+
+# Detection - Filebeat
+
+## Resources
+
+* https://www.elastic.co/guide/en/beats/filebeat/current/filebeat-input-azure-eventhub.html
+* https://docs.microsoft.com/en-us/azure/azure-monitor/platform/activity-log-collect-tenants#:~:text=In%20the%20Azure%20portal%2C%20select%20Monitor%20%3E%20Activity%20Log.,an%20event%20hub%20check%20box.
