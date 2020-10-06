@@ -236,6 +236,18 @@ After granting consent to the application, the victim will be redirected to a we
 
 # Detection - Filebeat
 
+## Create an Event Hub
+
+## Check Permissions and Get Connection String
+
+## Logic App
+
+### Add Event Hubs Trigger
+
+### Add Event Hubs Action
+
+### Connect to your Event Hub
+
 ## Resources
 
 * https://www.elastic.co/guide/en/beats/filebeat/current/filebeat-input-azure-eventhub.html
