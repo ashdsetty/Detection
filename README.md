@@ -240,3 +240,5 @@ After granting consent to the application, the victim will be redirected to a we
 
 * https://www.elastic.co/guide/en/beats/filebeat/current/filebeat-input-azure-eventhub.html
 * https://docs.microsoft.com/en-us/azure/azure-monitor/platform/activity-log-collect-tenants#:~:text=In%20the%20Azure%20portal%2C%20select%20Monitor%20%3E%20Activity%20Log.,an%20event%20hub%20check%20box.
+* https://docs.microsoft.com/en-us/azure/event-hubs/event-hubs-create
+* https://docs.microsoft.com/en-us/azure/connectors/connectors-create-api-azure-event-hubs
