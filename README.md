@@ -284,8 +284,11 @@ After granting consent to the application, the victim will be redirected to a we
 
 3. For the schema, use this script: 
 
-```
-{
+<details>
+  <summary>
+    expand code block
+  </summary>
+  {
     "properties": {
         "body": {
             "properties": {
@@ -377,7 +380,7 @@ After granting consent to the application, the victim will be redirected to a we
     },
     "type": "object"
 }
-```
+</details>
 
 ### Connect to your Event Hub
 
