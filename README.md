@@ -289,6 +289,8 @@ When asked for connection to event hub. click manually enter connection informat
 
 ![activity log](https://user-images.githubusercontent.com/63748134/95362630-59d53f00-089c-11eb-973c-465ad66571df.png)
 
+5. Save
+
 ### Add Event Hubs Trigger
 
 1. Create a blank logic app, this will open up the logic app designer
