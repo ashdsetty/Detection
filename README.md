@@ -277,6 +277,18 @@ When asked for connection to event hub. click manually enter connection informat
 - Workspace Key: Same key retrieved from earlier
 - Workspace ID: Same ID retrieved from earlier
 
+### Export Activity Log to Event Hub
+
+1. Go to Activity Log
+
+2. Diagnostic Settings -> Add Diagnostic Setting -> Select all logs 
+
+3. Click Archive to storage account -> Select your preferred storage account
+
+4. Click Stream to an event hub -> Input namespace -> input event hub name (insights-operational-logs) -> input policy name (RootManageSharedAccessKey)
+
+![activity log](https://user-images.githubusercontent.com/63748134/95362630-59d53f00-089c-11eb-973c-465ad66571df.png)
+
 ### Add Event Hubs Trigger
 
 1. Create a blank logic app, this will open up the logic app designer
