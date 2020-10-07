@@ -262,6 +262,21 @@ After granting consent to the application, the victim will be redirected to a we
 
 ## Logic App
 
+### Connect to your Event Hub
+
+When asked to connect to event hub
+
+Retrieve the following information by following these instructions:
+- Go to Log Analytics Workspace -> Settings -> Agents Management
+- Note Down Workspace ID and Primary Key
+
+![workspace](https://user-images.githubusercontent.com/63748134/95359627-622b7b00-0898-11eb-843f-0dc6be1484e4.png)
+
+When asked for connection to event hub. click manually enter connection information, use the following fields
+- Connection Name: Custom name
+- Workspace Key: Same key retrieved from earlier
+- Workspace ID: Same ID retrieved from earlier
+
 ### Add Event Hubs Trigger
 
 1. Create a blank logic app, this will open up the logic app designer
@@ -280,7 +295,10 @@ After granting consent to the application, the victim will be redirected to a we
 
 1. Add new step in logic app designer
 
-2. Search parse json -> Click Parse Json action -> Enter Body in action field
+2. Search parse json (Under Data Operations)  -> Click Parse Json action -> Enter Body in content field
+
+![data operations](https://user-images.githubusercontent.com/63748134/95357350-c39e1a80-0895-11eb-8b91-87656dcfca69.png)
+
 
 3. For the schema, use this script: 
 
@@ -387,7 +405,25 @@ After granting consent to the application, the victim will be redirected to a we
 </p>
 </details>
 
-### Connect to your Event Hub
+![parse json](https://user-images.githubusercontent.com/63748134/95356891-2d69f480-0895-11eb-9a54-498dd04d883f.PNG)
+
+### Compose
+
+1. Add New step -> Data Operations -> Actions -> Compose 
+
+2. Select Body
+
+![compose](https://user-images.githubusercontent.com/63748134/95357737-3f986280-0896-11eb-836b-057fa09afbf1.PNG)
+
+### Send Data
+
+1. Add New Step -> Search Data Collector -> CLick on Send Data (Azure Log Analytics Data Collector)
+
+![data collector](https://user-images.githubusercontent.com/63748134/95357976-871eee80-0896-11eb-9c62-d6697d7a9f72.PNG)
+
+2. Enter Fields: Outputs under JSON Request Body, Create a name for logs, Add time as a new parameter 
+
+![send data](https://user-images.githubusercontent.com/63748134/95358044-9b62eb80-0896-11eb-86b1-6b6d9bd4cc0b.PNG)
 
 ## Resources
 
