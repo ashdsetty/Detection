@@ -425,6 +425,10 @@ When asked for connection to event hub. click manually enter connection informat
 
 ![send data](https://user-images.githubusercontent.com/63748134/95358044-9b62eb80-0896-11eb-86b1-6b6d9bd4cc0b.PNG)
 
+3. Click Save
+
+4. Run to test if it works
+
 ## Resources
 
 * https://www.elastic.co/guide/en/beats/filebeat/current/filebeat-input-azure-eventhub.html
