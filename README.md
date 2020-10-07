@@ -276,7 +276,108 @@ After granting consent to the application, the victim will be redirected to a we
 
 ![example](https://docs.microsoft.com/en-us/azure/connectors/media/connectors-create-api-azure-event-hubs/event-hubs-trigger.png)
 
-### Add Event Hubs Action
+### Add Event Hubs Parse Json
+
+1. Add new step in logic app designer
+
+2. Search parse json -> Click Parse Json action -> Enter Body in action field
+
+3. For the schema, use this script: 
+
+```
+{
+    "properties": {
+        "body": {
+            "properties": {
+                "ContentData": {
+                    "type": "string"
+                },
+                "Properties": {
+                    "properties": {
+                        "ProfileName": {
+                            "type": "string"
+                        },
+                        "x-opt-enqueued-time": {
+                            "type": "string"
+                        },
+                        "x-opt-offset": {
+                            "type": "string"
+                        },
+                        "x-opt-sequence-number": {
+                            "type": "number"
+                        }
+                    },
+                    "type": "object"
+                },
+                "SystemProperties": {
+                    "properties": {
+                        "EnqueuedTimeUtc": {
+                            "type": "string"
+                        },
+                        "Offset": {
+                            "type": "string"
+                        },
+                        "PartitionKey": {},
+                        "SequenceNumber": {
+                            "type": "number"
+                        }
+                    },
+                    "type": "object"
+                }
+            },
+            "type": "object"
+        },
+        "headers": {
+            "properties": {
+                "Cache-Control": {
+                    "type": "string"
+                },
+                "Content-Length": {
+                    "type": "string"
+                },
+                "Content-Type": {
+                    "type": "string"
+                },
+                "Date": {
+                    "type": "string"
+                },
+                "Expires": {
+                    "type": "string"
+                },
+                "Location": {
+                    "type": "string"
+                },
+                "Pragma": {
+                    "type": "string"
+                },
+                "Retry-After": {
+                    "type": "string"
+                },
+                "Timing-Allow-Origin": {
+                    "type": "string"
+                },
+                "Transfer-Encoding": {
+                    "type": "string"
+                },
+                "Vary": {
+                    "type": "string"
+                },
+                "X-AspNet-Version": {
+                    "type": "string"
+                },
+                "X-Powered-By": {
+                    "type": "string"
+                },
+                "x-ms-request-id": {
+                    "type": "string"
+                }
+            },
+            "type": "object"
+        }
+    },
+    "type": "object"
+}
+```
 
 ### Connect to your Event Hub
 
