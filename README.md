@@ -238,16 +238,27 @@ After granting consent to the application, the victim will be redirected to a we
 
 ## Create an Event Hub
 
-
 1. Create a Resource Group (if necessary): standard options, note down the name
+
 2. Create an Event Hub: Create a Resource -> Event Hubs -> Add (Create event hubs namespace)
+
 - select correct subscription, resource group from step 1, standard options
+
 - note down name
+
 3. Go to Event Hubs Namespace page, select Event Hubs in the left menu, at the top of the window, click + Event Hub
+
 - note down name, create
 
-
 ## Check Permissions and Get Connection String
+
+1. Go to event hubs namespace -> Setting -> Shared Access Policies: Under Claims, make sure that the manage permission is enabled
+
+![namespace](https://docs.microsoft.com/en-us/azure/connectors/media/connectors-create-api-azure-event-hubs/event-hubs-namespace.png)
+
+2. Under Policy, click on RootManageSharedAccessKey: Note down the primary key connection string
+
+![connection string](https://docs.microsoft.com/en-us/azure/connectors/media/connectors-create-api-azure-event-hubs/find-event-hub-namespace-connection-string.png)
 
 ## Logic App
 
