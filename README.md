@@ -381,7 +381,8 @@ After granting consent to the application, the victim will be redirected to a we
         }
     },
     "type": "object"
-}```
+}
+```
 
 </p>
 </details>
