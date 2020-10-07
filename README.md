@@ -264,6 +264,18 @@ After granting consent to the application, the victim will be redirected to a we
 
 ### Add Event Hubs Trigger
 
+1. Create a blank logic app, this will open up the logic app designer
+
+2. In the search box, enter event hubs
+
+![event hubs](https://docs.microsoft.com/en-us/azure/connectors/media/connectors-create-api-azure-event-hubs/find-event-hubs-trigger.png)
+
+3. Provide the info for the trigger:
+- event hub name: insights-operational-logs
+- content type: application/json
+
+![example](https://docs.microsoft.com/en-us/azure/connectors/media/connectors-create-api-azure-event-hubs/event-hubs-trigger.png)
+
 ### Add Event Hubs Action
 
 ### Connect to your Event Hub
