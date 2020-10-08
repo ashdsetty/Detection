@@ -64,9 +64,6 @@ Invoke-AADIntUserEnumerationAsOutsider -UserName "user@company.com
 
 # Get login information for a domain
 Get-AADIntLoginInformation -Domain company.com
-
-# Get tenant details
-Get-AADIntTenantDetails
 ```
 
 ### Intrusion - Execution
@@ -169,6 +166,11 @@ After granting consent to the application, the victim will be redirected to a we
 ### Post Intrusion - Persistance forward
 
 1. Reconnaissance (enumerating users, groups, objects in the user’s 365 tenant)
+
+```
+# Get tenant details
+Get-AADIntTenantDetails
+```
 
 2. Spear phishing (internal-to-internal)
 
