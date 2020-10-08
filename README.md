@@ -95,6 +95,9 @@ Get-Content .\users.txt | Invoke-AADIntUserEnumerationAsOutsider
 Use guest account from password spraying
 
 ```
+# Get tenant details
+Get-AADIntTenantDetails
+
 # Prompt for credentials and retrieve & store access token to cache
 Get-AADIntAccessTokenForAADGraph -SaveToCache
 
