@@ -72,6 +72,8 @@ Get-AADIntLoginInformation -Domain company.com
 
 [Password Spraying  Github Link](https://github.com/nickvangilder/Office-365-Password-Spray)
 
+https://github.com/dafthack/MailSniper
+
 Target a group of Office 365 accounts and use a generalized password list (created through python script). 
 
 Use the accounts found through the Outsider Recon Powershell scripts.
