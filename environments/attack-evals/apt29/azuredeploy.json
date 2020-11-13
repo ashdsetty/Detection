@@ -89,9 +89,9 @@
         },
         "windowsServerVmSize": {
             "type": "string",
-            "defaultValue": "Standard_B1s",
+            "defaultValue": "Standard_B1ms",
             "allowedValues": [
-                "Standard_B1s"
+                "Standard_B1ms"
             ],
             "metadata": {
                 "description": "Size of the virtual machine."
@@ -120,6 +120,13 @@
             ],
             "metadata": {
                 "description": "Size of the virtual machine. Reference: https://docs.microsoft.com/en-us/azure/virtual-machines/sizes-general"
+            }
+        },
+        "_artifactsLocation": {
+            "type": "string",
+            "defaultValue": "https://raw.githubusercontent.com/ashdsetty/Detection/master/",
+            "metadata": {
+                "description": "The location of resources, such as templates and DSC modules, that the template depends on"
             }
         },
         "_artifactsLocationSasToken": {
