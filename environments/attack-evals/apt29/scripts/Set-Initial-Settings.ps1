@@ -24,7 +24,7 @@ else{
 & .\Enable-PowerShell-Logging.ps1
 
 # Installing Endpoint Agent
-& .\Install-Endpoint-Agent.ps1 -EndpointAgent Sysmon
+& .\Install-Endpoint-Agent.ps1 # -EndpointAgent Sysmon
 
 # Set SACLs
 & .\Set-SACLs.ps1
