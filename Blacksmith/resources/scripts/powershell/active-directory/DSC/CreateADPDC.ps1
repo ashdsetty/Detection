@@ -12,7 +12,7 @@ configuration CreateADPDC
         [Int]$RetryIntervalSec=30
     ) 
     
-    Import-DscResource -ModuleName xActiveDirectory, xStorage, xNetworking, PSDesiredStateConfiguration, xPendingReboot
+    Import-DscResource -ModuleName xActiveDirectory, xNetworking, PSDesiredStateConfiguration, xPendingReboot
     [System.Management.Automation.PSCredential ]$DomainCreds = New-Object System.Management.Automation.PSCredential ("${DomainName}\$($Admincreds.UserName)", $Admincreds.Password)
     $Interface=Get-NetAdapter|Where Name -Like "Ethernet*"|Select-Object -First 1
     $InterfaceAlias=$($Interface.Name)
@@ -24,56 +24,43 @@ configuration CreateADPDC
             RebootNodeIfNeeded = $true
         }
 
-	    WindowsFeature DNS 
+        WindowsFeature DNS 
         { 
             Ensure = "Present" 
-            Name = "DNS"		
+            Name = "DNS"        
         }
 
         Script EnableDNSDiags
-	    {
-      	    SetScript = { 
-		        Set-DnsServerDiagnostics -All $true
+        {
+            SetScript = { 
+                Set-DnsServerDiagnostics -All $true
                 Write-Verbose -Verbose "Enabling DNS client diagnostics" 
             }
             GetScript =  { @{} }
             TestScript = { $false }
-	        DependsOn = "[WindowsFeature]DNS"
+            DependsOn = "[WindowsFeature]DNS"
         }
 
-	    WindowsFeature DnsTools
-	    {
-	        Ensure = "Present"
+        WindowsFeature DnsTools
+        {
+            Ensure = "Present"
             Name = "RSAT-DNS-Server"
             DependsOn = "[WindowsFeature]DNS"
-	    }
+        }
 
         xDnsServerAddress DnsServerAddress 
         { 
             Address        = '127.0.0.1' 
             InterfaceAlias = $InterfaceAlias
             AddressFamily  = 'IPv4'
-	        DependsOn = "[WindowsFeature]DNS"
-        }
-
-        xWaitforDisk Disk2
-        {
-            DiskNumber = 2
-            RetryIntervalSec =$RetryIntervalSec
-            RetryCount = $RetryCount
-        }
-
-        xDisk ADDataDisk {
-            DiskNumber = 2
-            DriveLetter = "F"
-            DependsOn = "[xWaitForDisk]Disk2"
+            DependsOn = "[WindowsFeature]DNS"
         }
 
         WindowsFeature ADDSInstall 
         { 
             Ensure = "Present" 
             Name = "AD-Domain-Services"
-	        DependsOn="[WindowsFeature]DNS" 
+            DependsOn="[WindowsFeature]DNS" 
         } 
 
         WindowsFeature ADDSTools
@@ -95,10 +82,10 @@ configuration CreateADPDC
             DomainName = $DomainName
             DomainAdministratorCredential = $DomainCreds
             SafemodeAdministratorPassword = $DomainCreds
-            DatabasePath = "F:\NTDS"
-            LogPath = "F:\NTDS"
-            SysvolPath = "F:\SYSVOL"
-	        DependsOn = @("[xDisk]ADDataDisk", "[WindowsFeature]ADDSInstall")
+            DatabasePath = "C:\NTDS"
+            LogPath = "C:\NTDS"
+            SysvolPath = "C:\SYSVOL"
+            DependsOn = "[WindowsFeature]ADDSInstall"
         } 
 
    }
