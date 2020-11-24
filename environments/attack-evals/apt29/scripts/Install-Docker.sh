@@ -6,7 +6,15 @@
 sudo wget -O cagent-linux-x64 https://www.dropbox.com/s/sgndvjwpuio5shw/cagent-linux-x64?dl=1
 sudo chmod +x cagent-linux-x64
 sudo ./cagent-linux-x64
-
+apt install python3-pip
+cd /
+cd home/
+cd ashdsetty/
+git clone https://github.com/mitre/caldera.git --recursive --branch 2.8.1
+cd caldera/
+pip3 install -r requirements.txt
+nohup python3 server.py --insecure &
+ 
 # Removing old docker
 if [ -x "$(command -v docker)" ]; then
     echo "Removing docker.."
