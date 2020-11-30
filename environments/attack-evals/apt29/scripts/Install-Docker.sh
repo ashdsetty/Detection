@@ -3,9 +3,9 @@
 # Author: Roberto Rodriguez (@Cyb3rWard0g)
 # License: GPL-3.0
 
-sudo wget -O cagent-linux-x64 https://www.dropbox.com/s/sgndvjwpuio5shw/cagent-linux-x64?dl=1
-sudo chmod +x cagent-linux-x64
-sudo ./cagent-linux-x64
+#sudo wget -O cagent-linux-x64 https://www.dropbox.com/s/sgndvjwpuio5shw/cagent-linux-x64?dl=1
+#sudo chmod +x cagent-linux-x64
+#sudo ./cagent-linux-x64
 apt install python3-pip
 cd /
 cd home/
