@@ -15,9 +15,9 @@ usage(){
     exit 1
 }
 
-sudo wget -O cagent-linux-x64 https://www.dropbox.com/s/sgndvjwpuio5shw/cagent-linux-x64?dl=1
-sudo chmod +x cagent-linux-x64
-sudo ./cagent-linux-x64
+#sudo wget -O cagent-linux-x64 https://www.dropbox.com/s/sgndvjwpuio5shw/cagent-linux-x64?dl=1
+#sudo chmod +x cagent-linux-x64
+#sudo ./cagent-linux-x64
 
 # ************ Command Options **********************
 while getopts i:h option
