@@ -13,7 +13,7 @@ cd ashdsetty/
 git clone https://github.com/mitre/caldera.git --recursive --branch 2.8.1
 cd caldera/
 pip3 install -r requirements.txt
-nohup python3 server.py --insecure &
+# nohup python3 server.py --insecure &
  
 # Removing old docker
 if [ -x "$(command -v docker)" ]; then
