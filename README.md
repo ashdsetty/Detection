@@ -298,6 +298,28 @@ When asked for connection to event hub. click manually enter connection informat
 
 5. Save
 
+### Export Audit Log to Event Hub
+
+1. Go to Azure Active Directory that you want to collect logs from
+
+![audit log](https://user-images.githubusercontent.com/63748134/101061942-0cedac00-355f-11eb-9e82-a016072742a7.png)
+
+2. Export Data Settings
+
+![export setting](https://user-images.githubusercontent.com/63748134/101062133-41f9fe80-355f-11eb-84fe-2b5d07115324.png)
+
+3. Add Diagnostic Setting
+
+![diagnostic setting](https://user-images.githubusercontent.com/63748134/101062215-5dfda000-355f-11eb-9987-b40d4e1ba1d8.png)
+
+4. Click Stream to an event hub -> Input namespace -> input event hub name (insights-operational-logs) -> input policy name (RootManageSharedAccessKey)
+
+Example Settings:
+
+![settings](https://user-images.githubusercontent.com/63748134/101062325-82597c80-355f-11eb-9aa4-67f00b9e9a3d.png)
+
+5. Save
+
 ### Add Event Hubs Trigger
 
 1. Create a blank logic app, this will open up the logic app designer
